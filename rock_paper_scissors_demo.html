@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rock paper scissors demo</title>
+</head>
+<body>
+	<script type="text/javascript">
+
+	
+
+	//sets options for rock, paper, scissors
+
+	var options = ["r", "p", "s"];
+
+	//when somonne presses a key, what key that is will be logged to console
+
+	document.onkeyup = function(event){
+	var key = eventkey;
+	console.log(key)
+	}
+	
+	//var computerChoice = "p"
+	var computerChoice = options[Math.floor(Math.random()*options.length)];
+	console.log(computerChoice);
+
+
+	if (key == "r" && computerChoice == "p"){
+		console.log("computer won");
+	}else if (key == "p" && computerChoice =="p"){
+		console.log("this is a tie");
+	}else if (key == "s" && computerChoice == "p"){
+		console.log("the user won");
+	}if (key == "r" && computerChoice == "r"){
+		console.log("this is a tie");
+	}else if (key == "p" && computerChoice =="r"){
+		console.log("user won");
+	}else if (key == "s" && computerChoice == "r"){
+		console.log("computer won");
+	}if (key == "r" && computerChoice == "s"){
+		console.log("user won");
+	}else if (key == "p" && computerChoice =="s"){
+		console.log("computer won");
+	}else (key == "s" && computerChoice == "s"){
+		console.log("this is a tie");
+	}
+
+	console.log(key);
+
+	</script>
+</body>
+</html>
